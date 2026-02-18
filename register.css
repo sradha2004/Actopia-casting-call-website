@@ -1,0 +1,89 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(135deg,#b30065,#E5E5BE); /*fallback */
+    background-image: url('act 4.jpg'),linear-gradient(135deg,#b30065,#E5E5BE);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* keeps image fixed during scroll */
+    background-position: center;
+}
+
+/* Centered form container */
+.container-login-box {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+.container-login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b30065;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Inputs and Textareas */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Button styling */
+.btn-login {
+    width: 100%;
+    background-color: #b30065;
+    border: none;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #b30065;
+}
+
+/* Footer styling (optional) */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #b30065;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: Make responsive for small screens */
+@media (max-width: 600px) {
+    .container-login-box {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+}
